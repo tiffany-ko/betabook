@@ -41,3 +41,26 @@ export const removeFriendship = fn<typeof Actions.removeFriendship>().mockResolv
   ok: true,
   value: "none",
 });
+
+export const saveGoal = fn<typeof Actions.saveGoal>().mockResolvedValue({ ok: true, value: -1 });
+export const deleteGoal = fn<typeof Actions.deleteGoal>().mockResolvedValue({
+  ok: true,
+  value: undefined,
+});
+
+export const createJournalEntry = fn<typeof Actions.createJournalEntry>().mockResolvedValue({
+  ok: true,
+  value: undefined,
+});
+export const createUndatedSend = fn<typeof Actions.createUndatedSend>().mockResolvedValue({
+  ok: true,
+  value: undefined,
+});
+export const updateJournalEntry = fn<typeof Actions.updateJournalEntry>().mockResolvedValue({
+  ok: true,
+  value: undefined,
+});
+
+export const acknowledgeGoalAchievements = fn<
+  typeof Actions.acknowledgeGoalAchievements
+>().mockResolvedValue({ ok: true, value: undefined });
